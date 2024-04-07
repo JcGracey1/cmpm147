@@ -1,26 +1,12 @@
-// project.js - purpose and description here
-// Author: Your Name
-// Date:
+// project.js - Experiment 01
+// Author: Jacqueline Gracey
+// Date:4/7/23
 
 // NOTE: This is how we might start a basic JavaaScript OOP project
 
 // Constants - User-servicable parts
 // In a longer project I like to put these in a separate file
 
-// define a class
-class MyProjectClass {
-  // constructor function
-  constructor(param1, param2) {
-    // set properties using 'this' keyword
-    this.property1 = param1;
-    this.property2 = param2;
-  }
-  
-  // define a method
-  myMethod() {
-    // code to run when method is called
-  }
-}
 
 function main() {
   const fillers = {
@@ -70,15 +56,15 @@ function main() {
     }
   
     /* global box */
-    box.innerText = story;
+    $("#box").text(story);
   }
   
   /* global clicker */
-  clicker.onclick = generate;
+  $("#clicker").click(generate);
   
   generate();
   
 }
 
 // let's get this party started - uncomment me
-//main();
+main();
