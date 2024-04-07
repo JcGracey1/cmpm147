@@ -14,7 +14,9 @@ function main() {
     chest2: ["Incline Bench Press", "Dumbbell Flyes", "Cable Crossover"],
     back: ["Lat Pull-Downs", "Pull-Ups", "Bent-Over Barbell Rows"],
     back2: ["Back Extension", "Low Rows", "Deadlifts"],
-    legs: ["Barbell Squats", "Romanian Deadlifts", "Lunges", "Leg Press", "Glute Drive", "Calf Raises", "Hamstring Curls", "Leg Extension"],
+    legs: ["Barbell Squats", "Lunges", "Leg Press"],
+    legs2 :["Romanian Deadlifts", "Hamstring Curls", "Glute Drive"],
+    legs3 :["Calf Raises", "Leg Extension"],
     shoulder: ["Overhead Barbell Press", "Dumbbell Shoulder Press", "Lateral Raises", "Front Raises", "Arnold Press", "Face Pulls"],
     biceps: ["Dumbbell Bicep Curl", "Preacher Curl", "Hammer Curl", "Cable Bicep Curl"],
     triceps: ["Tricep Rope Pushdowns", "Skull Crushers", "Diamond Push-ups", "Overhead Tricep Extension"],
@@ -26,7 +28,7 @@ function main() {
   \tChest and Back Day: 4 sets $chest, 3 sets $chest2, 4 sets $back,
   3 sets $back2.
   
-  \tLeg Day: 4 sets $legs, 4 sets $legs, 3 sets $legs
+  \tLeg Day: 4 sets $legs, 4 sets $legs2, 3 sets $legs3
   
   \tArm Day: 4 sets $shoulder, 4 sets $biceps, 4 sets $triceps
   
