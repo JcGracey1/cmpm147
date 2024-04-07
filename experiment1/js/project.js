@@ -23,7 +23,8 @@ function main() {
     cardio: ["Stair Climbers", "Inclined Treadmill", "Elliptical", "Biking"],
   };
   
-  const template = ` Hello Gym Goer! Choose which day you want:
+  const template = ` 
+  Hello Gym Goer! Choose which day you want:
   
   \tChest and Back Day: 4 sets $chest, 3 sets $chest2, 4 sets $back,
   3 sets $back2.
