@@ -33,7 +33,7 @@ function main() {
   
   \tArm Day: 4 sets $shoulder, 4 sets $biceps, 4 sets $triceps
   
-  Accomany workout with 15 mintues of $cardio
+  Accompany workout with 15 mintues of $cardio
   
   Enjoy!
   `;
