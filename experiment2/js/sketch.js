@@ -9,9 +9,32 @@ const treeColor = "#2f1303";
 const cloudColor = "#d4aab3";
 const sunColor = "#fbfae5";
 
+function resizeScreen() {
+  centerHorz = canvasContainer.width() / 2; // Adjusted for drawing logic
+  centerVert = canvasContainer.height() / 2; // Adjusted for drawing logic
+  console.log("Resizing...");
+  resizeCanvas(canvasContainer.width(), canvasContainer.height());
+  // redrawCanvas(); // Redraw everything based on new size
+}
+
 function setup() {
-  createCanvas(400, 200);
-  createButton("reimagine").mousePressed(() => seed++);
+  // place our canvas, making it fit our container
+  canvasContainer = $("#canvas-container");
+  let canvas = createCanvas(canvasContainer.width(), canvasContainer.height());
+  canvas.parent("canvas-container");
+  // resize canvas is the page is resized
+
+  $(window).resize(function() {
+    resizeScreen();
+  });
+  resizeScreen();
+
+  noiseSeed(millis());
+
+  // Initialize unique noise offsets for each oval
+  for (let i = 0; i < 10; i++) {
+    baseOffsets.push(random(1000)); // These remain constant throughout execution
+  }
 }
 
 function draw() {
