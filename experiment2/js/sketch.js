@@ -5,31 +5,22 @@ function resizeScreen() {
   resizeCanvas(canvasContainer.width(), canvasContainer.height());
   // redrawCanvas(); // Redraw everything based on new size
 }
+let seed = 0;
+$("#reimagine").click(function() {
+  seed++;
+});
 
-// setup() function is called once when the program starts
-function setup() {
-  // place our canvas, making it fit our container
+function setup() {  // place our canvas, making it fit our container
   canvasContainer = $("#canvas-container");
   let canvas = createCanvas(canvasContainer.width(), canvasContainer.height());
   canvas.parent("canvas-container");
-  // resize canvas is the page is resized
-
   $(window).resize(function() {
     resizeScreen();
   });
   resizeScreen();
-
-  noiseSeed(millis());
-
-  // Initialize unique noise offsets for each oval
-  for (let i = 0; i < 10; i++) {
-    baseOffsets.push(random(1000)); // These remain constant throughout execution
-  }
 }
 
 /* exported setup, draw */
-
-let seed = 0;
 
 const sunsetColor = "#ed8728";
 const treeColor = "#2f1303";
