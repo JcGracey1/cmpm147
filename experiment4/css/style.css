@@ -12,6 +12,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #a7d7e7;
+    font-family: "Times New Roman", Times, serif;
 }
 
 #canvas-container {
@@ -20,5 +22,7 @@ body {
     overflow: auto;
     margin: 10px;
     position: relative;
-    border: 1px solid #ccc;
+    border: 1px solid #790101;
+    background-color: #490101;
+    font-family: "Times New Roman", Times, serif;
 }
